@@ -3,6 +3,8 @@
 #Instagram: @thelinuxchoice
 trap 'echo exiting cleanly...; exit 1;' SIGINT SIGTSTP
 
+git clone https://github.com/thelinuxchoice/instashell.git
+
 checkroot() {
 
 if [[ "$(id -u)" -ne 0 ]]; then
